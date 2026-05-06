@@ -4,6 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfume</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #f7f5f2;
+        color: #333;
+      }
+    
+      main {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+      }
+    
+      /* HERO */
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(to right, #2c2c2c, #4a4a4a);
+        color: white;
+        border-radius: 10px;
+      }
+    
+      .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+    
+      .hero p {
+        font-size: 1.2em;
+        opacity: 0.9;
+      }
+    
+      /* SEÇÕES */
+      section {
+        margin-top: 40px;
+      }
+    
+      h2 {
+        margin-bottom: 20px;
+        border-left: 5px solid #d4af37;
+        padding-left: 10px;
+      }
+    
+      /* GRID DE PRODUTOS */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+    
+      .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+    
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      }
+    
+      .card h3 {
+        margin-top: 0;
+      }
+    
+      .preco {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #d4af37;
+      }
+    
+      /* SOBRE */
+      .sobre p {
+        line-height: 1.6;
+      }
+    
+      /* CATEGORIAS */
+      .categorias ul {
+        list-style: none;
+        padding: 0;
+      }
+    
+      .categorias li {
+        background: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-left: 4px solid #d4af37;
+        border-radius: 5px;
+      }
+    
+      /* CTA */
+      .cta {
+        text-align: center;
+        background: #2c2c2c;
+        color: white;
+        padding: 40px 20px;
+        border-radius: 10px;
+      }
+    
+      .cta button {
+        margin-top: 15px;
+        padding: 12px 25px;
+        border: none;
+        background: #d4af37;
+        color: #fff;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+    
+      .cta button:hover {
+        background: #b8962e;
+      }
+    
+      /* RESPONSIVO */
+      @media (max-width: 600px) {
+        .hero h1 {
+          font-size: 1.8em;
+        }
+      }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -11,7 +137,60 @@
 
         </header>
         <main>
-
+          <section class="hero">
+            <h1>Descubra o Perfume Perfeito</h1>
+            <p>Explore fragrâncias únicas que expressam sua personalidade e estilo.</p>
+          </section>
+        
+          <section class="destaques">
+            <h2>Perfumes em Destaque</h2>
+        
+            <div class="grid">
+              <article class="card">
+                <h3>Essência Floral</h3>
+                <p>Notas suaves de rosa e jasmim, ideal para o dia a dia.</p>
+                <span class="preco">R$ 199,90</span>
+              </article>
+        
+              <article class="card">
+                <h3>Madeira Intensa</h3>
+                <p>Fragrância marcante com toques de sândalo e âmbar.</p>
+                <span class="preco">R$ 249,90</span>
+              </article>
+        
+              <article class="card">
+                <h3>Cítrico Refrescante</h3>
+                <p>Perfeito para dias quentes, com notas de limão e bergamota.</p>
+                <span class="preco">R$ 179,90</span>
+              </article>
+            </div>
+          </section>
+        
+          <section class="sobre">
+            <h2>Sobre Nossos Perfumes</h2>
+            <p>
+              Trabalhamos com fragrâncias selecionadas das melhores casas de perfumaria,
+              garantindo qualidade, fixação e sofisticação. Cada perfume é escolhido
+              pensando em proporcionar uma experiência sensorial única.
+            </p>
+          </section>
+        
+          <section class="categorias">
+            <h2>Categorias</h2>
+            <ul>
+              <li>Perfumes Femininos</li>
+              <li>Perfumes Masculinos</li>
+              <li>Perfumes Unissex</li>
+              <li>Lançamentos</li>
+              <li>Promoções</li>
+            </ul>
+          </section>
+        
+          <section class="cta">
+            <h2>Encontre Sua Fragrância Ideal</h2>
+            <p>Responda nosso guia rápido e descubra o perfume perfeito para você.</p>
+            <button>Começar Agora</button>
+          </section>
         </main>
         <footer>
             <p>Paulo Santana</p>
